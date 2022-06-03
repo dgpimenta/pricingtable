@@ -31,8 +31,7 @@ body {
   display: flex;
   flex-direction: column;
 
-  height: 100vh;
-  background: linear-gradient(
+    background: linear-gradient(
     to bottom,
     var(--blue) 0%,
     var(--blue) 50%,
