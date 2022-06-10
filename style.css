@@ -118,8 +118,8 @@ p.description {
 }
 
 .cards .card {
-  width: 35.5rem;
-  height: 47rem;
+  max-width: 35.5rem;
+  min-height: 47rem;
   background: var(--white);
   /* border: 0.5px solid var(--border-gray); */
   border-radius: 1rem;
@@ -247,6 +247,14 @@ footer p {
     background: var(--blue);
   }
 
+  section #title {
+    padding-inline: 2rem;
+  }
+
+  .button {
+    padding: 1.2rem 8rem;
+  }
+
   .cards {
     padding: 2rem;
 
@@ -260,6 +268,10 @@ footer p {
     flex-wrap: wrap;
   }
 
+  .cards .card {
+    max-width: 30.5rem;
+  }
+
   footer {
     background: var(--page-background);
   }
@@ -267,5 +279,39 @@ footer p {
   footer h2,
   footer p {
     color: var(--blue);
+  }
+}
+
+@media (max-width: 375px) {
+  section #title {
+    padding-inline: 1.4rem;
+  }
+
+  section h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+  }
+
+  .button {
+    padding: 1.2rem 7.5rem;
+  }
+
+  .cards .card {
+    max-width: 28rem;
+  }
+}
+
+@media (max-width: 320px) {
+  section h1 {
+    font-size: 3.2rem;
+    font-weight: 700;
+  }
+
+  .button {
+    padding: 1.2rem 5.5rem;
+  }
+
+  .cards .card {
+    max-width: 24rem;
   }
 }
